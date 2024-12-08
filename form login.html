@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form with Image</title>
+    <!-- Link ke Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .login-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .login-body {
+            padding: 30px;
+            background-color: #ffffff;
+        }
+        .login-button {
+            background-color: #62e70a;
+            color: white;
+        }
+        .login-button:hover {
+            background-color: #0cee17;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card login-card" style="width: 24rem;">
+        <img src="C:\Users\devi kurniasari\OneDrive\Gambar\IMG_20210728_143824_902-removebg-preview.png" alt="Login Image" class="login-image">
+        <div class="login-body">
+            <h3 class="text-center text-primary mb-4"> Selamat Datang Di Geprek Blangkon Maseh</h3>
+            <form action="login_process.php" method="POST">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn login-button w-100">Login</button>
+                <p class="text-center mt-3">
+                    <small>Don't have an account? <a href="register.html" class="text-decoration-none">Sign up</a></small>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Link ke Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
